@@ -88,7 +88,7 @@ coded by:swantex
     try:
         while True:
             banner()
-            print(Fore.GREEN+Style.BRIGHT+"1."+Style.RESET_ALL+Fore.YELLOW+" SPAM ARACI"+Fore.GREEN+Style.BRIGHT+"\"+Style.RESET_ALL+Fore.YELLOW+"  "+Fore.GREEN+Style.BRIGHT+"\n3."+Style.RESET_ALL+Fore.YELLOW+" ÇIKIŞ")
+            print(Fore.GREEN+Style.BRIGHT+"1."+Style.RESET_ALL+Fore.YELLOW+" SPAM ARACI"+Fore.GREEN+Style.BRIGHT+"\n2"+Style.RESET_ALL+Fore.YELLOW+"  "+Fore.GREEN+Style.BRIGHT+"\n3."+Style.RESET_ALL+Fore.YELLOW+" ÇIKIŞ")
             opt=str(input(Fore.RED+Style.BRIGHT+"\n>>> "+Fore.RESET))
             if opt=='1':
                 domain=str(input(Fore.CYAN+Style.BRIGHT+"kullanıcı adını url olarak at:"+Fore.RESET))
