@@ -7,7 +7,7 @@ from rich.prompt import Prompt
 
 console = Console()
 
-banner = pyfiglet.figlet_format("GİYMA-MAKİNA", font="slant")
+banner = pyfiglet.figlet_format("GIYMA-MAKİNA", font="slant")
 console.print(
    f"[bold red]{banner}",
    "Creator: swantex",
@@ -28,7 +28,7 @@ def BannerGeneration():
        count = 0
        
        many = Prompt.ask(
-          "[bold red]KAÇ SMS GİTSİN?",
+          "[bold red]KAÇ SPAM GİTSİN?",
           default="999"
        )
 
@@ -38,7 +38,7 @@ def BannerGeneration():
              banners = pyfiglet.figlet_format(banner_text, font=random_fonts)
 
              count += 1
-             console.print(f"[bold magenta]Bol taşaklı başarıyla gönderildi[/]: [bold white][{count}]")
+             console.print(f"[bold magenta]Bol taşaklı başarıyla gönderildi![/]: [bold white][{count}]")
 
              file = open("banners.txt", "a")
              file.write(f"{banners}")
