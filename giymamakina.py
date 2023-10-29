@@ -7,7 +7,7 @@ from rich.prompt import Prompt
 
 console = Console()
 
-banner = pyfiglet.figlet_format("GIYMA-MAKİNA", font="slant")
+banner = pyfiglet.figlet_format("BRUTE FORCE'", font="slant")
 console.print(
    f"[bold red]{banner}",
    "Creator: FURKAN CEKEREK",
@@ -28,8 +28,8 @@ def BannerGeneration():
        count = 0
        
        many = Prompt.ask(
-          "[bold red]KAÇ TAKİPÇİ GİTSİN?",
-          default="9999"
+          "[bold red]Wordlist",
+          default="Ucusa hazir"
        )
 
        while count < int(many):
@@ -38,7 +38,7 @@ def BannerGeneration():
              banners = pyfiglet.figlet_format(banner_text, font=random_fonts)
 
              count += 1
-             console.print(f"[bold magenta]BAŞARIYLA GÖNDERİLDİi![/]: [bold white][{count}]")
+             console.print(f"[bold magenta]ŞİFRE DENENİYOR![/]: [bold white][{count}]")
 
              file = open("banners.txt", "a")
              file.write(f"{banners}")
