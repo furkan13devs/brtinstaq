@@ -28,7 +28,7 @@ def BannerGeneration():
        count = 0
        
        many = Prompt.ask(
-          "[bold red]Wordlist",
+          "[bold red]Kac deneme?",
           default="Ucusa hazir"
        )
 
